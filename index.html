@@ -1,32 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Marija Peraic</title>
 
-      <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <div class="background">
+    <header class="container">
+      <h1>
+        Marija Peraic
+      </h1>
+      <h2 class="email-header text-muted">
+        <a href="mailto:peraicka@hotmail.com">peraicka@hotmail.com</a>
+      </h2>
 
-        <h1 class="indexH1">marija<br>peraic</br></h1>
 
-        <h5 class="indexH5">peraicka@hotmail.com</h5>
-        <br>
+    </header>
+    <div class="page-title">
+      <h2 class="second-header container">
+      UX portfolio of student projects
+      </h2>
+    </div>
+    <section class="container">
 
-        <div class="profile">
-            <h6>
-                UX design graduate passionate about solving problems through design thinking. Recipient of 'Best Idea' award at
-                Idea Knockout for a student project, a shared economy mobile app. Experienced and enjoy working in international
-                environments and teams. Great at project and people management. Looking for an opportunity to expand design skills
-                and business horizons in an agency where user experience is crucial to project success.</h6>
+      <div class="row mt-4">
+
+        <div class="col-md thumbs">
+          <a href="#omwModal" data-toggle="modal" data-target="#omwModal">
+            <img src="images/omwThumb.png" alt="Project thumbnail">
+            <h3>
+              OnMyWay App Idea
+            </h3>
+          </a>
+          <h5 class="thumb-date">March 2015 — June 2015</h5>
+          <p>
+            The assignment: make an app that will improve the experience of the world.
+
+            <span class="thumbExclaimer">An idea for an app that I presented at Idea Knockout, Zagreb</span>
+          </p>
+
         </div>
 
-      <div class="btn-wrapper">
-        <a class="btn" href="cv.html">View my CV</a>
-        <a class="btn" href="portfolio/index.html">Portfolio</a>
-      </div>
+        <div class="col-md thumbs">
+          <a href="#vwModal" data-toggle="modal" data-target="#vwModal">
+            <img src="images/vwThumb.png" alt="Project thumbnail">
+            <h3>
+              VW Project
+            </h3>
+          </a>
+          <h5 class="thumb-date">October 2015 — January 2016</h5>
+          <p>
+            Volkswagen proposed a project for the team of 8 at Macromedia University to tackle: To connect the seemingly disparate themes of cars and health.
+            <span class="thumbExclaimer">This presentation shows the design process followed within the group. The ideas presented are my own.</span>
+          </p>
 
-    </div>
+        </div>
+
+        <div class="col-md thumbs">
+          <a href="#mastersModal" data-toggle="modal" data-target="#mastersModal">
+            <img src="images/mastersThumb.png" alt="Project thumbnail">
+            <h3>
+              Master's Thesis
+            </h3>
+          </a>
+          <h5 class="thumb-date">April 2016 — July 2016</h5>
+          <p>
+            This design project is the practical part of the master’s thesis that is accompanied by a theoretical basis. The following pages illustrate the findings from applied research methods and the development of a design proposal for origin traceability in Croatia.
+            <span class="thumbExclaimer">This presentation shows some of the proposed solutions for the larger design project of my master's thesis.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section>
+      <!-- Modal -->
+      <div class="modal fade" id="omwModal" tabindex="-1" role="dialog" aria-labelledby="omwModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">OnMyWay App Idea</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+              <video class="video" poster="images/omwthumb.png" controls>
+                <source src="videos/OnMyWay.mp4" type="video/mp4">
+                Your browser does not support the OnMyWay MP4 video. Please <a href="videos/onmyway.mp4">download it.</a>
+              </video>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Modal -->
+    <section>
+
+    <section>
+      <!-- Modal -->
+      <div class="modal fade" id="vwModal" tabindex="-1" role="dialog" aria-labelledby="vwModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Volkswagen Project</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+              <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=http://marijap.com/pdfs/vwProject.pdf" class="embedPDF">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Modal -->
+    </section>
+
+    <section>
+      <!-- Modal -->
+      <div class="modal fade" id="mastersModal" tabindex="-1" role="dialog" aria-labelledby="mastersModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Master's Thesis</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+
+              <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=http://marijap.com/pdfs/mastersThesis.pdf" class="embedPDF">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Modal -->
+    </section>
+
 </body>
 </html>
