@@ -2,14 +2,14 @@ $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
-  lg: 1092px,
+  lg: 980px,
   xl: 1420px
 );
 
 $container-max-widths: (
   sm: 540px,
   md: 760px,
-  lg: 1100px,
+  lg: 1000px,
   xl: 1400px
 );
 
@@ -17,7 +17,17 @@ $modal-lg:                          1000px;
 $modal-md:                          800px;
 $modal-sm:                          500px;
 
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "node_modules/bootstrap/scss/close";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/modal";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/utilities";
 
 // begin custom styles
 $purple: #751873;
