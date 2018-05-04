@@ -50,49 +50,79 @@ p {
   margin-bottom: 44px;
 }
 h1 {
+  color: #000;
   font-weight: 400;
   font-size: 60pt;
   line-height: 80%;
   text-transform: uppercase;
   display: block;
-  margin: 66px 0 12px -6px;
   padding-bottom: 10px;
 }
 h2 {
   font-weight: 400;
   font-size: 20pt;
-  text-transform: uppercase;
 }
 h3 {
   font-weight: 600;
   font-size: 1.2em;
-  color: $purple;
+  color: #000;
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 22px;
 }
 h5 {
   font-weight: 200;
   color: $darkgray;
 }
-h5.thumb-date {
-  font-size: 1em;
-  margin-bottom: 44px;
-}
-ul {
-    list-style-type: square;
-    margin-left: -25px;
-}
-.thumbs img {
-  display: block;
+// ==============================================================
+//                                     Profile
+// ==============================================================
+.profile-page {
   width: 100%;
-  margin-bottom: 44px;
-  filter: $gray;
-  -webkit-filter: grayscale(1);
-  -webkit-transition: all .5s ease-in-out;
+  height: 730px;
+  background: #000 url(images/marijaHeader.jpg) no-repeat top center;
+  background-size: auto 730px;
+  margin-bottom: 88px;
 }
-.thumbs img:hover {
-  filter: none;
-  -webkit-filter: grayscale(0);
+#name-profile {
+  padding-top: 240px;
+}
+#email-profile {
+  color: #fff;
+  text-decoration: underline;
+}
+.profile-page h2 {
+  margin-bottom: 88px;
+}
+#email-profile:hover {
+  color: #fff;
+}
+#text-profile {
+  color: #fff;
+}
+// ==============================================================
+//                                     Portfolio
+// ==============================================================
+.project-aim {
+  font-size: 1em;
+  margin-bottom: 12px;
+}
+a .project-aim:hover {
+  text-decoration: none;
+}
+.thumbs {
+  text-align: center;
+  img {
+    display: block;
+    width: 100%;
+    margin-bottom: 44px;
+    filter: $gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .5s ease-in-out;
+  }
+  img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+  }
 }
 .video {
   width: 100%;
@@ -109,13 +139,4 @@ ul {
 }
 .email-header a {
   color: $darkgray;
-}
-.second-header {
-  margin-bottom: 300px;
-  color: $darkgray;
-}
-.thumbExclaimer {
-  margin-top: 22px;
-  display: block;
-  color: $gray;
 }

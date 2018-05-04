@@ -4747,27 +4747,26 @@ p {
 }
 
 h1 {
+  color: #000;
   font-weight: 400;
   font-size: 60pt;
   line-height: 80%;
   text-transform: uppercase;
   display: block;
-  margin: 66px 0 12px -6px;
   padding-bottom: 10px;
 }
 
 h2 {
   font-weight: 400;
   font-size: 20pt;
-  text-transform: uppercase;
 }
 
 h3 {
   font-weight: 600;
   font-size: 1.2em;
-  color: #751873;
+  color: #000;
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 22px;
 }
 
 h5 {
@@ -4775,16 +4774,47 @@ h5 {
   color: #6a757d;
 }
 
-h5.thumb-date {
+.profile-page {
+  width: 100%;
+  height: 730px;
+  background: #000 url(images/marijaHeader.jpg) no-repeat top center;
+  background-size: auto 730px;
+  margin-bottom: 88px;
+}
+
+#name-profile {
+  padding-top: 240px;
+}
+
+#email-profile {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.profile-page h2 {
+  margin-bottom: 88px;
+}
+
+#email-profile:hover {
+  color: #fff;
+}
+
+#text-profile {
+  color: #fff;
+}
+
+.project-aim {
   font-size: 1em;
-  margin-bottom: 44px;
+  margin-bottom: 12px;
 }
 
-ul {
-  list-style-type: square;
-  margin-left: -25px;
+a .project-aim:hover {
+  text-decoration: none;
 }
 
+.thumbs {
+  text-align: center;
+}
 .thumbs img {
   display: block;
   width: 100%;
@@ -4793,7 +4823,6 @@ ul {
   -webkit-filter: grayscale(1);
   -webkit-transition: all 0.5s ease-in-out;
 }
-
 .thumbs img:hover {
   filter: none;
   -webkit-filter: grayscale(0);
@@ -4817,17 +4846,6 @@ ul {
 
 .email-header a {
   color: #6a757d;
-}
-
-.second-header {
-  margin-bottom: 300px;
-  color: #6a757d;
-}
-
-.thumbExclaimer {
-  margin-top: 22px;
-  display: block;
-  color: #979599;
 }
 
 /*# sourceMappingURL=main.css.map */
