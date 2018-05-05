@@ -32,15 +32,15 @@ $modal-sm:                          500px;
 // begin custom styles
 $purple: #751873;
 $white: #fafafa;
-$gray: #979599;
-$darkgray: #6a757d;
+$grey: #979599;
+$darkgrey: #6a757d;
+$darkgrey: #414141;
 
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,400,400i,600,900');
 
 body {
   font-family: "Raleway", sans-serif;
-  margin-bottom: 108px;
   background-color: $white;
 }
 a {
@@ -71,14 +71,14 @@ h3 {
 }
 h5 {
   font-weight: 200;
-  color: $darkgray;
+  color: $darkgrey;
 }
 // ==============================================================
 //                                     SCROLLER
 // ==============================================================
 .scroller {
   width: 100%;
-  height: 210px;
+  height: 190px;
   background-color: #000;
   text-align: center;
   color: #fff;
@@ -93,7 +93,7 @@ path {
 }
 .scroller p {
   padding-top: 44px;
-  margin-bottom: 5px;
+  margin-bottom: -10px;
   font-size: 1.4em;
 }
 // ==============================================================
@@ -101,9 +101,9 @@ path {
 // ==============================================================
 #profile-page {
   width: 100%;
-  height: 730px;
+  height: 700px;
   background: #000 url(images/marijaHeader.jpg) no-repeat top center;
-  background-size: auto 730px;
+  background-size: auto 700px;
 }
 #name-profile {
   padding-top: 240px;
@@ -124,28 +124,40 @@ path {
 // ==============================================================
 //                                     Portfolio
 // ==============================================================
-.project-aim {
-  font-size: 1.2em;
-  margin-bottom: 12px;
-}
-a .project-aim:hover {
-  text-decoration: none;
-}
 .thumbs {
   text-align: center;
-  margin: 220px 0 220px 0;
-  img {
-    display: block;
-    width: 100%;
-    margin-bottom: 44px;
-    filter: $gray;
-    -webkit-filter: grayscale(1);
-    -webkit-transition: all .5s ease-in-out;
+  margin: 200px 0 180px 0;
+}
+.project-aim {
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  background: $darkgrey;
+  h5 {
+    font-size: 1.2em;
+    padding-top: 40px;
+    color: #fff;
   }
-  img:hover {
-    filter: none;
-    -webkit-filter: grayscale(0);
+}
+.project-title {
+  width: 100%;
+  height: 220px;
+  padding: 12px;
+  background: $darkgrey;
+  h3 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 50px;
   }
+}
+#omw-title {
+  border-top: 2px solid #cb0000;
+}
+#vw-title {
+  border-top: 2px solid #f3b300;
+}
+#masters-title {
+  border-top: 2px solid #009dff;
 }
 .video {
   width: 100%;
@@ -155,32 +167,29 @@ a .project-aim:hover {
   width: 100%;
   height: 75vh;
 }
-.email-header {
-  font-weight: 200;
-  text-transform: lowercase;
-  margin-bottom: 100px;
-}
-.email-header a {
-  color: $darkgray;
-}
+
 // ==============================================================
 //                                     Contact
 // ==============================================================
 #contact-page {
   width: 100%;
-  height: 940px;
+  height: 820px;
   background: #000;
   text-align: center;
   padding-top: 220px;
 }
 #contact-page h1 {
+  font-weight: 200;
   color: #fff;
   margin-bottom: 88px;
 }
 .contact-option {
-  color: #fff;
+  color: $grey;
   text-decoration: underline;
 }
 .contact-option h2 {
   margin-bottom: 22px;
+}
+#contact-number {
+  text-decoration: none;
 }

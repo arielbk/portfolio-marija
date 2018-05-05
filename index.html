@@ -68,31 +68,40 @@
 
       <div class="col-md thumbs">
         <a href="#omwModal" data-toggle="modal" data-target="#omwModal">
-          <h5 class="project-aim">Improve the Experience of Berlin:</h5>
-          <h3>
-            OnMyWay App Idea
-          </h3>
-          <img src="images/omwThumb.png" alt="Project thumbnail">
+          <div class="project-aim">
+            <h5>Improve the Experience of Berlin</h5>
+          </div>
+          <div id="omw-title" class="project-title">
+            <h3>
+              OnMyWay App Idea
+            </h3>
+          </div>
         </a>
       </div>
 
       <div class="col-md thumbs">
         <a href="#vwModal" data-toggle="modal" data-target="#vwModal">
-          <h5 class="project-aim">Macromedia University with Volkswagen:</h5>
-          <h3>
-            VW Project
-          </h3>
-          <img src="images/vwThumb.png" alt="Project thumbnail">
+          <div class="project-aim">
+            <h5>Macromedia University with Volkswagen</h5>
+          </div>
+          <div id="vw-title" class="project-title">
+            <h3>
+              The Future of Cars and Health
+            </h3>
+          </div>
         </a>
       </div>
 
       <div class="col-md thumbs">
         <a href="#mastersModal" data-toggle="modal" data-target="#mastersModal">
-          <h5 class="project-aim">Master's Thesis Design Project:</h5>
-          <h3>
-            Master's Thesis
-          </h3>
-          <img src="images/mastersThumb.png" alt="Project thumbnail">
+          <div class="project-aim">
+            <h5>Master's Thesis Design Project</h5>
+          </div>
+          <div id="masters-title" class="project-title">
+            <h3>
+              Food Traceability System
+            </h3>
+          </div>
         </a>
       </div>
 
@@ -187,27 +196,12 @@
   <div class="container">
     <h1>Marija Peraic</h1>
     <a class="contact-option" href="mailto:me@marijap.com"><h2>me@marijap.com</h2></a>
-    <a class="contact-option" href=""><h2>+385 99 3119 232</h2></a>
+    <a class="contact-option" id="contact-number" href=""><h2>+385 99 3119 232</h2></a>
     <a class="contact-option" href="http://linkedin.com/in/marijaperaic"><h2>linkedin: marijaperaic</h2></a>
   </div>
   </div>
 
   <!-- END CONTACT PAGE -->
 
-<script>
-  var $root = $('html, body');
-
-  $('a[href^="#"]').click(function() {
-      var href = $.attr(this, 'href');
-
-      $root.animate({
-          scrollTop: $(href).offset().top
-      }, 500, function () {
-          window.location.hash = href;
-      });
-
-      return false;
-  });
-</script>
 </body>
 </html>

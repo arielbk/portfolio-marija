@@ -4734,7 +4734,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: "Raleway", sans-serif;
-  margin-bottom: 108px;
   background-color: #fafafa;
 }
 
@@ -4771,12 +4770,12 @@ h3 {
 
 h5 {
   font-weight: 200;
-  color: #6a757d;
+  color: #414141;
 }
 
 .scroller {
   width: 100%;
-  height: 210px;
+  height: 190px;
   background-color: #000;
   text-align: center;
   color: #fff;
@@ -4794,15 +4793,15 @@ path {
 
 .scroller p {
   padding-top: 44px;
-  margin-bottom: 5px;
+  margin-bottom: -10px;
   font-size: 1.4em;
 }
 
 #profile-page {
   width: 100%;
-  height: 730px;
+  height: 700px;
   background: #000 url(images/marijaHeader.jpg) no-repeat top center;
-  background-size: auto 730px;
+  background-size: auto 700px;
 }
 
 #name-profile {
@@ -4826,30 +4825,45 @@ path {
   color: #fff;
 }
 
-.project-aim {
-  font-size: 1.2em;
-  margin-bottom: 12px;
-}
-
-a .project-aim:hover {
-  text-decoration: none;
-}
-
 .thumbs {
   text-align: center;
-  margin: 220px 0 220px 0;
+  margin: 200px 0 180px 0;
 }
-.thumbs img {
-  display: block;
+
+.project-aim {
   width: 100%;
-  margin-bottom: 44px;
-  filter: #979599;
-  -webkit-filter: grayscale(1);
-  -webkit-transition: all 0.5s ease-in-out;
+  height: 100px;
+  padding: 12px;
+  background: #414141;
 }
-.thumbs img:hover {
-  filter: none;
-  -webkit-filter: grayscale(0);
+.project-aim h5 {
+  font-size: 1.2em;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.project-title {
+  width: 100%;
+  height: 220px;
+  padding: 12px;
+  background: #414141;
+}
+.project-title h3 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+#omw-title {
+  border-top: 2px solid #cb0000;
+}
+
+#vw-title {
+  border-top: 2px solid #f3b300;
+}
+
+#masters-title {
+  border-top: 2px solid #009dff;
 }
 
 .video {
@@ -4862,36 +4876,31 @@ a .project-aim:hover {
   height: 75vh;
 }
 
-.email-header {
-  font-weight: 200;
-  text-transform: lowercase;
-  margin-bottom: 100px;
-}
-
-.email-header a {
-  color: #6a757d;
-}
-
 #contact-page {
   width: 100%;
-  height: 940px;
+  height: 820px;
   background: #000;
   text-align: center;
   padding-top: 220px;
 }
 
 #contact-page h1 {
+  font-weight: 200;
   color: #fff;
   margin-bottom: 88px;
 }
 
 .contact-option {
-  color: #fff;
+  color: #979599;
   text-decoration: underline;
 }
 
 .contact-option h2 {
   margin-bottom: 22px;
+}
+
+#contact-number {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */
