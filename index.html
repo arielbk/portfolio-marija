@@ -28,13 +28,14 @@
   <!-- PROFILE PAGE -->
 
   <div id="profile-page">
-  <div class="container">
+  <div class="container-fluid">
   <div class="row">
   <div class="col-6">
     <h1 id="name-profile">Marija Peraic</h1>
     <a id="email-profile" href="mailto:me@marijap.com"><h2>me@marijap.com</h2></a>
     <p id="text-profile">
       UX design graduate passionate about solving problems through design thinking. Recipient of ‘Best Idea’ award at Idea Knockout for a student project, a shared economy mobile app. Experienced and enjoy working in international environments and teams. Great at project and people management. Looking for an opportunity to expand design skills and business horizons in an agency where user experience is crucial to project success.
+      <br><a href="#">PDF Icon? Link to CV?</a>
     </p>
   </div>
   </div>
@@ -48,7 +49,7 @@
   <div class="scroller">
 
     <p>
-      Hello and thanks for visiting my site! Scroll down for a quick peek at some of my university projects...
+      Hello and thanks for visiting my site! Scroll down to see some of my student projects...
     </p>
 
     <a href="#portfolio-page"><svg class="scroller-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000">
@@ -62,7 +63,7 @@
 
   <!-- PORTFOLIO PAGE -->
 
-  <section id="portfolio-page" class="container">
+  <section id="portfolio-page" class="container-fluid">
 
     <div class="row mt-4">
 
@@ -73,7 +74,7 @@
           </div>
           <div id="omw-title" class="project-title">
             <h3>
-              OnMyWay App Idea
+              OnMyWay Mobile App Idea
             </h3>
           </div>
         </a>
@@ -108,8 +109,37 @@
     </div>
   </section>
 
-  <!-- Modal -->
-  <section class="modal fade" id="omwModal" tabindex="-1" role="dialog" aria-labelledby="omwModal" aria-hidden="true">
+  <!-- OMW Modal Teaser -->
+  <section class="omw modal fade" id="omwModal" tabindex="-1" role="dialog" aria-labelledby="omwModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Improve the Experience of Berlin</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>
+            OnMyWay Mobile App Idea
+          </h3>
+          <h4 class="modal-date">April 2015-Jul 2015</h4>
+          <p>
+            I was at my friend Pia’s place talking about the semester’s topic: making an app to improve the experience of Berlin. Unfortunately, we had a more imminent problem — at one o’clock in the morning we realised we didn’t have any avocado for our elaborate breakfast plans. Yikes! In the entire city there were only two supermarkets open, both an hour away. So I thought…
+          </p>
+          <p>
+            Wouldn’t it be awesome if there was an app that could connect me with someone going that way anyway? Needless to say, there wasn’t. And we never got our avocado. But the idea for OnMyWay was born…
+          </p>
+
+          <a href="#omwProject" data-toggle="modal" data-target="#omwProject" data-dismiss="modal">Watch the Video</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /OMW Modal Teaser -->
+
+  <!-- OMW Modal Viewer -->
+  <section class="omw modal fade" id="omwProject" tabindex="-1" role="dialog" aria-labelledby="omwModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -129,10 +159,42 @@
       </div>
     </div>
   </section>
-  <!-- /Modal -->
+  <!-- /OMW Modal Viewer -->
 
-  <!-- Modal -->
-  <section class="modal fade" id="vwModal" tabindex="-1" role="dialog" aria-labelledby="vwModal" aria-hidden="true">
+  <!-- VW Modal Teaser -->
+  <section class="vw modal fade" id="vwModal" tabindex="-1" role="dialog" aria-labelledby="omwModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Macromedia University with Volkswagen</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>
+            The Future of Cars and Health
+          </h3>
+          <h4 class="modal-date">October 2015 - January 2016</h4>
+          <p>
+            What do you do when your company is facing an environmental scandal that’s all over the media? For VW it meant hiring the Macromedia team of eight to provide them with crazy ideas that connect two seemingly unrelated topics: cars and health. Their primary goal was to set a new direction for the future.
+          </p>
+          <p>
+            Self-driving cars were an exciting new breakthrough at the time. It seemed like every major company was working on them. That is where our design research started from.
+          </p>
+          <p>
+            As a team we proposed four possible solutions. The following slides show the design process behind my idea.
+          </p>
+
+          <a href="#vwProject" data-toggle="modal" data-target="#vwProject" data-dismiss="modal">See the PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /VW Modal Teaser -->
+
+  <!-- VW Modal Viewer -->
+  <section class="vw modal fade" id="vwProject" tabindex="-1" role="dialog" aria-labelledby="vwModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -149,10 +211,43 @@
       </div>
     </div>
   </section>
-  <!-- /Modal -->
+  <!-- /VW Modal Viewer -->
 
-  <!-- Modal -->
-  <section class="modal fade" id="mastersModal" tabindex="-1" role="dialog" aria-labelledby="mastersModal" aria-hidden="true">
+
+  <!-- Master's Modal Teaser -->
+  <section class="masters modal fade" id="mastersModal" tabindex="-1" role="dialog" aria-labelledby="omwModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Master's Thesis Design Project</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3>
+            Food Traceability System
+          </h3>
+          <h4 class="modal-date">April 2016 - July 2016</h4>
+          <p>
+            Do you know where the fresh foods you buy are coming from? As it turns out, not that many people do. Coming from a family that produces fruits and vegetables, it was only natural to decide upon a topic that would try to solve this problem.
+          </p>
+          <p>
+            This project proved to be more complex than any other I had done. I worked with two different mentors that pushed me to develop both the scientific research and the practical design project. A particular challenge was balancing the needs and wants of four different target users.
+          </p>
+          <p>
+            This presentation shows how I’ve come to the design system proposal.
+          </p>
+
+          <a href="#mastersProject" data-toggle="modal" data-target="#mastersProject" data-dismiss="modal">See the PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Master's Modal Teaser -->
+
+  <!-- Master's Modal Viewer -->
+  <section class="masters modal fade" id="mastersProject" tabindex="-1" role="dialog" aria-labelledby="mastersModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -169,7 +264,7 @@
       </div>
     </div>
   </section>
-  <!-- /Modal -->
+  <!-- /Master's Modal Viewer -->
 
   <!-- END PORTFOLIO PAGE -->
 
@@ -178,7 +273,7 @@
   <div class="scroller">
 
     <p>
-      What do you think of my portfolio? I'd love to get your feedback, get in touch!
+      What do you think of my portfolio? I'd love to hear your feedback, get in touch!
     </p>
 
     <a href="#contact-page"><svg class="scroller-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000">
@@ -193,7 +288,7 @@
   <!-- CONTACT PAGE -->
 
   <div id="contact-page">
-  <div class="container">
+  <div class="container-fluid">
     <h1>Marija Peraic</h1>
     <a class="contact-option" href="mailto:me@marijap.com"><h2>me@marijap.com</h2></a>
     <a class="contact-option" id="contact-number" href=""><h2>+385 99 3119 232</h2></a>
