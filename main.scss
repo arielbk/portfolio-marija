@@ -3,7 +3,7 @@ $purple: #751873;
 $white: #fafafa;
 $grey: #979599;
 $darkgrey: #6a757d;
-$darkgrey: #414141;
+$darkgrey: #212121;
 
 $omw-highlight: #cb0000;
 $vw-highlight: #f3b300;
@@ -24,6 +24,8 @@ $container-max-widths: (
   lg: 1000px,
   xl: 1400px
 );
+
+$grid-gutter-width:           40px;
 
 $modal-lg:                          1000px;
 $modal-md:                          800px;
@@ -46,7 +48,7 @@ $modal-header-border-width:         0;
 @import "node_modules/bootstrap/scss/utilities";
 
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,400i,600,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,400,400i,600,900');
 
 body {
   font-family: "Raleway", sans-serif;
@@ -61,7 +63,7 @@ p {
 h1 {
   color: #000;
   font-weight: 400;
-  font-size: 60pt;
+  font-size: 55pt;
   line-height: 80%;
   text-transform: uppercase;
   display: block;
@@ -80,6 +82,10 @@ h3 {
   text-transform: uppercase;
   margin-top: 50px;
 }
+h4 {
+  font-size: 1em;
+  display: inline-block;
+}
 h5 {
   font-weight: 200;
   color: $darkgrey;
@@ -89,22 +95,22 @@ h5 {
 // ==============================================================
 .scroller {
   width: 100%;
-  height: 22vh;
+  height: 17vh;
   background-color: #000;
   text-align: center;
   color: #fff;
 }
 .scroller-arrow {
-  padding-bottom: 1vh;
-  height: 90px;
-  width: 100px;
+  padding-bottom: 10px;
+  height: 67.5px;
+  width: 75px;
   fill: #fff;
 }
 path {
   fill: #fff !important;
 }
 .scroller p {
-  padding-top: 8vh;
+  padding-top: 2.1em;
   margin-bottom: -10px;
   font-size: 1.4em;
 }
@@ -112,17 +118,23 @@ path {
 //                                     Profile
 // ==============================================================
 #profile-page {
+  padding-left: 21px;
   width: 100%;
-  height: 78vh;
-  background: #000 url(images/marijaHeader.jpg) no-repeat top center;
-  background-size: auto 78vh;
+  height: 83vh;
+  min-height: 625px;
+  background: $grey url(images/marijaHeader.jpg) no-repeat top center;
+  background-size: auto cover;
 }
 #name-profile {
-  padding-top: 240px;
+  padding-top: 200px;
+  margin-left: -6px;
 }
 #email-profile {
-  color: #fff;
-  text-decoration: underline;
+  color: lighten($grey, 15%);
+  text-decoration: none;
+  h2 {
+    font-weight: 100;
+  }
 }
 #profile-page h2 {
   margin-bottom: 88px;
@@ -131,17 +143,22 @@ path {
   color: #fff;
 }
 #text-profile {
-  color: #fff;
+  max-width: 610px;
+  color: $white;
+  font-weight: 100;
+  line-height: 1.7em;
+  font-size: 1.2em;
 }
 // ==============================================================
 //                                     Portfolio
 // ==============================================================
 #portfolio-page {
-  height: 78vh;
+  height: 83vh;
+  min-height: 625px;
 }
 .thumbs {
   text-align: center;
-  padding-top: 44px;
+  padding-top: 22vh;
 }
 .project-aim {
   width: 100%;
@@ -159,6 +176,10 @@ path {
   height: 220px;
   padding: 12px;
   background: $darkgrey;
+  h3 {
+    font-weight: 400;
+    line-height: 1.4em;
+  }
 }
 #omw-title {
   border-top: 2px solid $omw-highlight;
@@ -178,8 +199,17 @@ path {
   height: 75vh;
 }
 .modal-date {
-  color: $grey;
-  margin-bottom: 44px;
+  color: lighten($grey, 18%);
+  margin-top: 7px;
+}
+.modal-date-omw {
+  margin-left: 18em;
+}
+.modal-date-vw {
+  margin-left: 10em;
+}
+.modal-date-masters {
+  margin-left: 19em;
 }
 .modal-title {
   color: #fff;
@@ -190,24 +220,62 @@ path {
     color: $grey;
     font-size: 1.3em;
   }
+  p {
+    font-size: 1.2em;
+    font-weight: 100;
+    line-height: 1.9em;
+    margin-bottom: 1.7em;
+  }
 }
 .omw .modal-header {
   border-bottom: 2px solid $omw-highlight;
 }
+.omw a {
+  font-weight: 400;
+  color: #fff;
+  border-left: 25px solid $omw-highlight;
+  padding-left: 6px;
+  display: block;
+  margin-top: 52px;
+}
 .omw a:hover {
   color: $omw-highlight;
+  text-decoration: none;
 }
 .vw .modal-header {
   border-bottom: 2px solid $vw-highlight;
 }
+.vw a {
+  font-weight: 400;
+  color: #fff;
+  border-left: 25px solid $vw-highlight;
+  padding-left: 6px;
+  display: block;
+  margin-top: 52px;
+}
 .vw a:hover {
   color: $vw-highlight;
+  text-decoration: none;
 }
 .masters .modal-header {
   border-bottom: 2px solid $masters-highlight;
 }
+.masters a {
+  font-weight: 400;
+  color: #fff;
+  border-left: 25px solid $masters-highlight;
+  padding-left: 6px;
+  display: block;
+  margin-top: 52px;
+}
 .masters a:hover {
   color: $masters-highlight;
+  text-decoration: none;
+}
+.modal-project-title {
+  margin: 12px 0 58px 0;
+  font-weight: 200;
+  line-height: 1.4em;
 }
 
 // ==============================================================
@@ -216,6 +284,7 @@ path {
 #contact-page {
   width: 100%;
   height: 100vh;
+  min-height: 625px;
   background: #000;
   text-align: center;
   padding-top: 220px;
@@ -223,14 +292,20 @@ path {
 #contact-page h1 {
   font-weight: 200;
   color: #fff;
-  margin-bottom: 88px;
+  margin-bottom: 130px;
 }
 .contact-option {
-  color: $grey;
-  text-decoration: underline;
+  color: lighten($grey, 15%);
+  text-decoration: none;
+}
+.contact-option:hover {
+  color: #fff;
+  font-weight: 200;
+  text-decoration: none;
 }
 .contact-option h2 {
-  margin-bottom: 22px;
+  margin-bottom: 44px;
+  font-weight: 100;
 }
 #contact-number {
   text-decoration: none;

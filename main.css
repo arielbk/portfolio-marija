@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,400,400i,600,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,200,400,400i,600,900");
 .close {
   float: right;
   font-size: 1.5rem;
@@ -27,8 +27,8 @@ button.close {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -55,8 +55,8 @@ button.close {
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -64,8 +64,8 @@ button.close {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -20px;
+  margin-left: -20px;
 }
 
 .no-gutters {
@@ -87,8 +87,8 @@ button.close {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .col {
@@ -1042,7 +1042,7 @@ button.close {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #414141;
+  background-color: #212121;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0;
@@ -4748,7 +4748,7 @@ p {
 h1 {
   color: #000;
   font-weight: 400;
-  font-size: 60pt;
+  font-size: 55pt;
   line-height: 80%;
   text-transform: uppercase;
   display: block;
@@ -4770,23 +4770,28 @@ h3 {
   margin-top: 50px;
 }
 
+h4 {
+  font-size: 1em;
+  display: inline-block;
+}
+
 h5 {
   font-weight: 200;
-  color: #414141;
+  color: #212121;
 }
 
 .scroller {
   width: 100%;
-  height: 22vh;
+  height: 17vh;
   background-color: #000;
   text-align: center;
   color: #fff;
 }
 
 .scroller-arrow {
-  padding-bottom: 1vh;
-  height: 90px;
-  width: 100px;
+  padding-bottom: 10px;
+  height: 67.5px;
+  width: 75px;
   fill: #fff;
 }
 
@@ -4795,25 +4800,31 @@ path {
 }
 
 .scroller p {
-  padding-top: 8vh;
+  padding-top: 2.1em;
   margin-bottom: -10px;
   font-size: 1.4em;
 }
 
 #profile-page {
+  padding-left: 21px;
   width: 100%;
-  height: 78vh;
-  background: #000 url(images/marijaHeader.jpg) no-repeat top center;
-  background-size: auto 78vh;
+  height: 83vh;
+  min-height: 625px;
+  background: #979599 url(images/marijaHeader.jpg) no-repeat top center;
+  background-size: auto cover;
 }
 
 #name-profile {
-  padding-top: 240px;
+  padding-top: 200px;
+  margin-left: -6px;
 }
 
 #email-profile {
-  color: #fff;
-  text-decoration: underline;
+  color: #bdbcbf;
+  text-decoration: none;
+}
+#email-profile h2 {
+  font-weight: 100;
 }
 
 #profile-page h2 {
@@ -4825,23 +4836,28 @@ path {
 }
 
 #text-profile {
-  color: #fff;
+  max-width: 610px;
+  color: #fafafa;
+  font-weight: 100;
+  line-height: 1.7em;
+  font-size: 1.2em;
 }
 
 #portfolio-page {
-  height: 78vh;
+  height: 83vh;
+  min-height: 625px;
 }
 
 .thumbs {
   text-align: center;
-  padding-top: 44px;
+  padding-top: 22vh;
 }
 
 .project-aim {
   width: 100%;
   height: 100px;
   padding: 12px;
-  background: #414141;
+  background: #212121;
 }
 .project-aim h5 {
   font-size: 1.2em;
@@ -4853,7 +4869,11 @@ path {
   width: 100%;
   height: 220px;
   padding: 12px;
-  background: #414141;
+  background: #212121;
+}
+.project-title h3 {
+  font-weight: 400;
+  line-height: 1.4em;
 }
 
 #omw-title {
@@ -4879,8 +4899,20 @@ path {
 }
 
 .modal-date {
-  color: #979599;
-  margin-bottom: 44px;
+  color: #c5c4c6;
+  margin-top: 7px;
+}
+
+.modal-date-omw {
+  margin-left: 18em;
+}
+
+.modal-date-vw {
+  margin-left: 10em;
+}
+
+.modal-date-masters {
+  margin-left: 19em;
 }
 
 .modal-title {
@@ -4894,34 +4926,77 @@ path {
   color: #979599;
   font-size: 1.3em;
 }
+.modal p {
+  font-size: 1.2em;
+  font-weight: 100;
+  line-height: 1.9em;
+  margin-bottom: 1.7em;
+}
 
 .omw .modal-header {
   border-bottom: 2px solid #cb0000;
 }
 
+.omw a {
+  font-weight: 400;
+  color: #fff;
+  border-left: 25px solid #cb0000;
+  padding-left: 6px;
+  display: block;
+  margin-top: 52px;
+}
+
 .omw a:hover {
   color: #cb0000;
+  text-decoration: none;
 }
 
 .vw .modal-header {
   border-bottom: 2px solid #f3b300;
 }
 
+.vw a {
+  font-weight: 400;
+  color: #fff;
+  border-left: 25px solid #f3b300;
+  padding-left: 6px;
+  display: block;
+  margin-top: 52px;
+}
+
 .vw a:hover {
   color: #f3b300;
+  text-decoration: none;
 }
 
 .masters .modal-header {
   border-bottom: 2px solid #009dff;
 }
 
+.masters a {
+  font-weight: 400;
+  color: #fff;
+  border-left: 25px solid #009dff;
+  padding-left: 6px;
+  display: block;
+  margin-top: 52px;
+}
+
 .masters a:hover {
   color: #009dff;
+  text-decoration: none;
+}
+
+.modal-project-title {
+  margin: 12px 0 58px 0;
+  font-weight: 200;
+  line-height: 1.4em;
 }
 
 #contact-page {
   width: 100%;
   height: 100vh;
+  min-height: 625px;
   background: #000;
   text-align: center;
   padding-top: 220px;
@@ -4930,16 +5005,23 @@ path {
 #contact-page h1 {
   font-weight: 200;
   color: #fff;
-  margin-bottom: 88px;
+  margin-bottom: 130px;
 }
 
 .contact-option {
-  color: #979599;
-  text-decoration: underline;
+  color: #bdbcbf;
+  text-decoration: none;
+}
+
+.contact-option:hover {
+  color: #fff;
+  font-weight: 200;
+  text-decoration: none;
 }
 
 .contact-option h2 {
-  margin-bottom: 22px;
+  margin-bottom: 44px;
+  font-weight: 100;
 }
 
 #contact-number {
