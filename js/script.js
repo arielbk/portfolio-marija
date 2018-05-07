@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   $("a.scroller-link").click(function() {
     var scrollID = $(this).attr("href");
-    $("html, body").animate({scrollTop: $(scrollID).offset().top}, "slow");
+    $("html, body").animate({scrollTop: $(scrollID).offset().top}, 400);
     return false;
   });
 
