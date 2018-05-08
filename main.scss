@@ -118,6 +118,12 @@ path {
   margin-bottom: -10px;
   font-size: 1.4em;
 }
+// change vh in mobile version
+@media (max-width: map-get($grid-breakpoints, sm)) {
+  .scroller {
+    min-height: 150px;
+  }
+}
 // ==============================================================
 //                                     Profile
 // ==============================================================
@@ -157,8 +163,15 @@ path {
 }
 // remove massive whitespace in mobile version
 @media (max-width: map-get($grid-breakpoints, sm)) {
+  #profile-page {
+    background-position: 53% 50%;
+    min-height: 650px;
+  }
   #name-profile {
     padding-top: 88px;
+  }
+  #text-profile {
+    color: #fff;
   }
 }
 // ==============================================================
@@ -173,15 +186,6 @@ path {
   margin-bottom: 22vh;
   background: #000;
   transition: background .4s;
-}
-// remove massive whitespace in mobile version
-@media (max-width: map-get($grid-breakpoints, md)) {
-  .thumbs {
-    margin: 44px 0 44px 0;
-  }
-  .thumbs-last {
-    margin-bottom: 88px;
-  }
 }
 .thumbs:hover {
   background: $darkgrey;
@@ -301,7 +305,21 @@ path {
 .pdf-viewer {
   background: url(images/loading.gif) center center no-repeat;
 }
-
+// Remove vh units in mobile version
+@media (max-width: map-get($grid-breakpoints, sm)) {
+  #portfolio-page {
+    min-height: 650px;
+  }
+}
+// Remove massive whitespace in stacked version
+@media (max-width: map-get($grid-breakpoints, md)) {
+  .thumbs {
+    margin: 44px 0 44px 0;
+  }
+  .thumbs-last {
+    margin-bottom: 88px;
+  }
+}
 // ==============================================================
 //                                     Contact
 // ==============================================================
@@ -334,4 +352,11 @@ path {
 }
 #contact-number {
   text-decoration: none;
+}
+// remove massive whitespace in mobile version
+@media (max-width: map-get($grid-breakpoints, sm)) {
+  #contact-page {
+    min-height: 700px;
+    padding-top: 88px;
+  }
 }

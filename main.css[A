@@ -4817,11 +4817,6 @@ path {
   font-size: 1.4em;
 }
 
-@media (max-width: 576px) {
-  .scroller {
-    min-height: 150px;
-  }
-}
 #profile-page {
   padding-left: 21px;
   padding-right: 21px;
@@ -4862,17 +4857,8 @@ path {
 }
 
 @media (max-width: 576px) {
-  #profile-page {
-    background-position: 53% 50%;
-    min-height: 650px;
-  }
-
   #name-profile {
     padding-top: 88px;
-  }
-
-  #text-profile {
-    color: #fff;
   }
 }
 #portfolio-page {
@@ -4887,6 +4873,15 @@ path {
   transition: background 0.4s;
 }
 
+@media (max-width: 840px) {
+  .thumbs {
+    margin: 44px 0 44px 0;
+  }
+
+  .thumbs-last {
+    margin-bottom: 88px;
+  }
+}
 .thumbs:hover {
   background: #212121;
 }
@@ -5027,20 +5022,6 @@ path {
   background: url(images/loading.gif) center center no-repeat;
 }
 
-@media (max-width: 576px) {
-  #portfolio-page {
-    min-height: 650px;
-  }
-}
-@media (max-width: 840px) {
-  .thumbs {
-    margin: 44px 0 44px 0;
-  }
-
-  .thumbs-last {
-    margin-bottom: 88px;
-  }
-}
 #contact-page {
   width: 100%;
   min-height: 100vh;
@@ -5079,9 +5060,8 @@ path {
 
 @media (max-width: 576px) {
   #contact-page {
-    min-height: 700px;
     padding-top: 88px;
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css%5BA.map */
