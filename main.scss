@@ -1,5 +1,4 @@
 // colours
-$purple: #751873;
 $white: #fafafa;
 $grey: #979599;
 $darkgrey: #6a757d;
@@ -13,7 +12,7 @@ $masters-highlight: #009dff;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
-  md: 768px,
+  md: 840px,
   lg: 980px,
   xl: 1420px
 );
@@ -25,7 +24,7 @@ $container-max-widths: (
   xl: 1400px
 );
 
-$grid-gutter-width:           40px;
+$grid-gutter-width:           36px;
 
 $modal-lg:                          1000px;
 $modal-md:                          800px;
@@ -54,12 +53,8 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: $white;
 }
-*::selection {
-  background: lighten($darkgrey, 30%);
-}
-a {
-  color: $purple;
-}
+::selection { background: lighten($darkgrey, 30%); }
+::-moz-selection { background: lighten($darkgrey, 30%); }
 a:hover {
   text-decoration: none;
 }
@@ -70,7 +65,7 @@ h1 {
   color: #000;
   font-weight: 400;
   font-size: 55pt;
-  line-height: 80%;
+  line-height: 1.1em;
   text-transform: uppercase;
   display: block;
   padding-bottom: 10px;
@@ -119,7 +114,7 @@ path {
   fill: #fff !important;
 }
 .scroller p {
-  padding-top: 2.1em;
+  padding: 2.1em 2em 0 2em;
   margin-bottom: -10px;
   font-size: 1.4em;
 }
@@ -143,15 +138,14 @@ path {
   text-decoration: none;
   h2 {
     font-weight: 100;
+    margin-bottom: 88px;
   }
-}
-#profile-page h2 {
-  margin-bottom: 88px;
 }
 #email-profile:hover {
   color: #fff;
 }
 #text-profile {
+  display: inline-block;
   max-width: 610px;
   color: $white;
   font-weight: 100;
@@ -159,6 +153,13 @@ path {
   font-size: 1.2em;
   margin-bottom: 0;
   padding-bottom: 1em;
+  height: 100%;
+}
+// remove massive whitespace in mobile version
+@media (max-width: map-get($grid-breakpoints, sm)) {
+  #name-profile {
+    padding-top: 88px;
+  }
 }
 // ==============================================================
 //                                     Portfolio
@@ -170,11 +171,20 @@ path {
   text-align: center;
   margin-top: 22vh;
   margin-bottom: 22vh;
-  background: $darkgrey;
+  background: #000;
   transition: background .4s;
 }
+// remove massive whitespace in mobile version
+@media (max-width: map-get($grid-breakpoints, md)) {
+  .thumbs {
+    margin: 44px 0 44px 0;
+  }
+  .thumbs-last {
+    margin-bottom: 88px;
+  }
+}
 .thumbs:hover {
-  background: #000;
+  background: $darkgrey;
 }
 .project-aim {
   width: 100%;
@@ -182,7 +192,8 @@ path {
   padding: 12px;
   h5 {
     font-size: 1.2em;
-    padding-top: 40px;
+    line-height: 1.4em;
+    padding-top: 30px;
     color: #fff;
   }
 }
@@ -217,7 +228,7 @@ path {
   margin: 7px 0 0 auto;
   display: inline-block;
 }
-// Not the best solution, but allows the modal date to float to the right and sit by the x button
+// Allows the modal date to float to the right and sit by the x button
 .modal-header .close {
   margin: -1rem -1rem -1rem 0;
 }

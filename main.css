@@ -27,8 +27,8 @@ button.close {
 
 .container {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 18px;
+  padding-left: 18px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -37,7 +37,7 @@ button.close {
     max-width: 540px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 840px) {
   .container {
     max-width: 760px;
   }
@@ -55,8 +55,8 @@ button.close {
 
 .container-fluid {
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 18px;
+  padding-left: 18px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -64,8 +64,8 @@ button.close {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -20px;
-  margin-left: -20px;
+  margin-right: -18px;
+  margin-left: -18px;
 }
 
 .no-gutters {
@@ -87,8 +87,8 @@ button.close {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 18px;
+  padding-left: 18px;
 }
 
 .col {
@@ -448,7 +448,7 @@ button.close {
     margin-left: 91.6666666667%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 840px) {
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
@@ -1893,7 +1893,7 @@ button.bg-dark:focus {
     display: inline-flex !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 840px) {
   .d-md-none {
     display: none !important;
   }
@@ -2355,7 +2355,7 @@ button.bg-dark:focus {
     align-self: stretch !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 840px) {
   .flex-md-row {
     flex-direction: row !important;
   }
@@ -2791,7 +2791,7 @@ button.bg-dark:focus {
     float: none !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 840px) {
   .float-md-left {
     float: left !important;
   }
@@ -3583,7 +3583,7 @@ button.bg-dark:focus {
     margin-left: auto !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 840px) {
   .m-md-0 {
     margin: 0 !important;
   }
@@ -4565,7 +4565,7 @@ button.bg-dark:focus {
     text-align: center !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 840px) {
   .text-md-left {
     text-align: left !important;
   }
@@ -4737,12 +4737,12 @@ body {
   background-color: #fafafa;
 }
 
-*::selection {
+::selection {
   background: #6e6e6e;
 }
 
-a {
-  color: #751873;
+::-moz-selection {
+  background: #6e6e6e;
 }
 
 a:hover {
@@ -4757,7 +4757,7 @@ h1 {
   color: #000;
   font-weight: 400;
   font-size: 55pt;
-  line-height: 80%;
+  line-height: 1.1em;
   text-transform: uppercase;
   display: block;
   padding-bottom: 10px;
@@ -4812,7 +4812,7 @@ path {
 }
 
 .scroller p {
-  padding-top: 2.1em;
+  padding: 2.1em 2em 0 2em;
   margin-bottom: -10px;
   font-size: 1.4em;
 }
@@ -4837,9 +4837,6 @@ path {
 }
 #email-profile h2 {
   font-weight: 100;
-}
-
-#profile-page h2 {
   margin-bottom: 88px;
 }
 
@@ -4848,6 +4845,7 @@ path {
 }
 
 #text-profile {
+  display: inline-block;
   max-width: 610px;
   color: #fafafa;
   font-weight: 100;
@@ -4855,8 +4853,14 @@ path {
   font-size: 1.2em;
   margin-bottom: 0;
   padding-bottom: 1em;
+  height: 100%;
 }
 
+@media (max-width: 576px) {
+  #name-profile {
+    padding-top: 88px;
+  }
+}
 #portfolio-page {
   min-height: 83vh;
 }
@@ -4865,12 +4869,21 @@ path {
   text-align: center;
   margin-top: 22vh;
   margin-bottom: 22vh;
-  background: #212121;
+  background: #000;
   transition: background 0.4s;
 }
 
+@media (max-width: 840px) {
+  .thumbs {
+    margin: 44px 0 44px 0;
+  }
+
+  .thumbs-last {
+    margin-bottom: 88px;
+  }
+}
 .thumbs:hover {
-  background: #000;
+  background: #212121;
 }
 
 .project-aim {
@@ -4880,7 +4893,8 @@ path {
 }
 .project-aim h5 {
   font-size: 1.2em;
-  padding-top: 40px;
+  line-height: 1.4em;
+  padding-top: 30px;
   color: #fff;
 }
 
