@@ -1,11 +1,6 @@
-$(document).ready(function() {
+// Some Bootstrap components use jQuery, so I might as well integrate it :)
 
-  // if ($("body").hasClass("touch-device")) {
-  // // Calculate height based on touch device viewport
-  //   function calculateHeight() {
-  //     $("...")
-  //   }
-  // } Is this worth it though, could do set height on mobile devices..
+$(document).ready(function() {
 
   // Smooth scrolling
   $("a.scroller-link").click(function() {
@@ -26,7 +21,6 @@ $(document).ready(function() {
 
 });
 
-
 // Determine whether touch or hover device / iPhone workaround helper
 if ("ontouchstart" in document.documentElement) {
   $("body").addClass("touch-device");
@@ -36,7 +30,6 @@ if ("ontouchstart" in document.documentElement) {
 
 mastersTimer = setInterval("reloadMasters();", 2000);
 vwTimer = setInterval("reloadVW();", 2000);
-
 
 // Google Docs workaround helpers
 function reloadMasters() {

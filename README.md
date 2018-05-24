@@ -2,9 +2,11 @@
 
 View at [marijap.com](http://marijap.com)
 
-This is a portfolio page for a designer. It uses some modified Bootstrap components, namely: grid and modal windows.
+Portfolio page for UX designer Marija Peraić. It uses some modified Bootstrap components, namely: grid and modal windows.
 
-This project has been a great introduction for me to use npm and sass.
+This project has been a great introduction for me to using npm and sass, and understanding the structure of Bootstrap.
+
+It has also been a good experience to learn the value of prototyping and fast workflow as the page went through many iterations
 
 ## Source to check out
 
